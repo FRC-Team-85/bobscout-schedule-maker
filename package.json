@@ -1,0 +1,23 @@
+{
+  "name": "bobscout-schedule-maker",
+  "version": "1.0.0",
+  "description": "Schedule generator for BOBScout android app",
+  "main": "app.js",
+  "dependencies": {
+    "tba-api-client": "^1.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FRC-Team-85/bobscout-schedule-maker.git"
+  },
+  "author": "Matt Michielsen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FRC-Team-85/bobscout-schedule-maker/issues"
+  },
+  "homepage": "https://github.com/FRC-Team-85/bobscout-schedule-maker#readme"
+}
