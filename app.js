@@ -2,9 +2,11 @@ var tba = require('tba-api-client')
 var client = new tba.API(process.env.TBA_API_KEY)
 var fs = require('fs')
 
+console.log('Searching for event: ', process.argv[2])
+
 var writeStream = fs.createWriteStream('schedule.csv')
 writeStream.write('Match,Red 1,Red 2,Red 3,Blue 1,Blue 2,Blue 3\n')
-client.EventMatches('2018miwmi').then(matches => {
+client.EventMatches(process.argv[2]).then(matches => {
   //console.log(matches)
   matches.sort(function(a, b) {
       return a.match_number - b.match_number
