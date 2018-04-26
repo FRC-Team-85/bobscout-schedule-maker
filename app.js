@@ -1,4 +1,10 @@
 var tba = require('tba-api-client')
+
+if (!process.env.TBA_API_KEY) {
+  console.log("Please set the TBA_API_KEY environment variable to your TBA account's API key.")
+  return
+}
+
 var client = new tba.API(process.env.TBA_API_KEY)
 var fs = require('fs')
 
